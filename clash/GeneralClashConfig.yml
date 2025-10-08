@@ -27,7 +27,23 @@ dns:
 
 # 默认规则（示例）
 rules:
-#91
+#谷歌商店更新
+  - DOMAIN-SUFFIX,play.googleapis.com,🚀 节点选择
+  - DOMAIN-SUFFIX,android.clients.google.com,🚀 节点选择
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🎯 全球直连
+  - DOMAIN-SUFFIX,connectivitycheck.gstatic.com,🎯 全球直连
+  - DOMAIN-SUFFIX,services.googleapis.cn,🎯 全球直连
+  - DOMAIN-SUFFIX,weixinbridge.com,🎯 全球直连
+  - DOMAIN-KEYWORD,weixinbridge,🎯 全球直连
+#维基百科
+  - DOMAIN-SUFFIX,zh.wikipedia.org,🚀 手动切换2
+  - DOMAIN-SUFFIX,wikimapia.org,🚀 手动切换2
+  - DOMAIN-SUFFIX,wikimedia.org,🚀 手动切换2
+  - DOMAIN-SUFFIX,wikinews.org,🚀 手动切换2
+  - DOMAIN-SUFFIX,wikipedia.org,🚀 手动切换2
+  - DOMAIN-SUFFIX,wikiquote.org,🚀 手动切换2
+  - DOMAIN-SUFFIX,wikisource.org,🚀 手动切换2
+ #91
   - DOMAIN-SUFFIX,91porn.com,九一
   - DOMAIN-SUFFIX,killcovid2021.com,九一
   - DOMAIN-SUFFIX,91pornplus.com,九一
@@ -36,4 +52,13 @@ rules:
   - DOMAIN-SUFFIX,cdn77.org,九一
   - DOMAIN-SUFFIX,btc35000.com,九一
   - DOMAIN-SUFFIX,9p9.xyz,九一
+#哔嘀影视
+  - DOMAIN-SUFFIX,bdys03.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bdys01.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bdys.me,🎯 全球直连
+  - DOMAIN-SUFFIX,bde4.icu,🎯 全球直连
+#Voflix
+  - DOMAIN-SUFFIX,voflix.com,🎯 全球直连
+  - DOMAIN-KEYWORD,voflix,🎯 全球直连
+#自定义规则分界线
 
