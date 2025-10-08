@@ -1,0 +1,39 @@
+# =========================================
+# Clash Rule Base Template
+# 可作为 SubConverter 的 clash_rule_base
+# =========================================
+
+# Clash 全局设置
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:9090
+
+# DNS 配置（可选）
+dns:
+  enable: true
+  ipv6: false
+  listen: :53
+  default-nameserver:
+    - 223.5.5.5
+    - 8.8.8.8
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+
+
+
+# 默认规则（示例）
+rules:
+#91
+  - DOMAIN-SUFFIX,91porn.com,九一
+  - DOMAIN-SUFFIX,killcovid2021.com,九一
+  - DOMAIN-SUFFIX,91pornplus.com,九一
+  - DOMAIN-SUFFIX,91p49.com,九一
+  - DOMAIN-SUFFIX,91p263.com,九一
+  - DOMAIN-SUFFIX,cdn77.org,九一
+  - DOMAIN-SUFFIX,btc35000.com,九一
+  - DOMAIN-SUFFIX,9p9.xyz,九一
+
