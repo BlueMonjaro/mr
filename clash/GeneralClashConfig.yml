@@ -28,7 +28,7 @@ dns:
 # 默认规则（示例）
 rules:
 #测速
-  - DOMAIN-KEYWORD,*.fast.com,🚀 手动切换
+  - DOMAIN-SUFFIX,fast.com,🚀 手动切换
 #谷歌商店更新
   - DOMAIN-SUFFIX,play.googleapis.com,🚀 节点选择
   - DOMAIN-SUFFIX,android.clients.google.com,🚀 节点选择
