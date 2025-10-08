@@ -14,6 +14,17 @@ external-controller: 127.0.0.1:9090
 
 # 默认规则（示例）
 rules:
+#谷歌地球
+  - DOMAIN-SUFFIX,kh.google.com,🚀 手动切换
+  - DOMAIN-SUFFIX,geo.keyhole.com,🚀 手动切换
+  - DOMAIN-SUFFIX,geoauth.google.com,🚀 手动切换
+  - DOMAIN-SUFFIX,khmdb.google.com,🚀 手动切换
+  - DOMAIN-SUFFIX,maps.google.com,🚀 手动切换
+  - DOMAIN-SUFFIX,maps.gstatic.com,🚀 手动切换
+  - DOMAIN-SUFFIX,dl.google.com,🚀 手动切换
+  - DOMAIN-SUFFIX,m.google.com,🚀 手动切换
+  - DOMAIN-SUFFIX,mw1.google.com,🚀 手动切换
+  - DOMAIN-SUFFIX,mw2.google.com,🚀 手动切换
 #测速
   - DOMAIN-SUFFIX,fast.com,🚀 手动切换
 #谷歌商店更新
