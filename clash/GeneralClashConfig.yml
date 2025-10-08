@@ -11,19 +11,6 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 
-# DNS 配置（可选）
-dns:
-  enable: true
-  ipv6: false
-  listen: :53
-  default-nameserver:
-    - 223.5.5.5
-    - 8.8.8.8
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  use-hosts: true
-
-
 
 # 默认规则（示例）
 rules:
