@@ -56,6 +56,9 @@ dns:
 
 # 默认规则（示例）
 rules:
+#91
+  - DOMAIN-SUFFIX,91porn.com,九一
+  - DOMAIN-SUFFIX,91pornplus.com,九一
 #谷歌地球
   - DOMAIN-SUFFIX,kh.google.com,🚀 手动切换
   - DOMAIN-SUFFIX,geo.keyhole.com,🚀 手动切换
@@ -85,15 +88,6 @@ rules:
   - DOMAIN-SUFFIX,wikipedia.org,🚀 手动切换2
   - DOMAIN-SUFFIX,wikiquote.org,🚀 手动切换2
   - DOMAIN-SUFFIX,wikisource.org,🚀 手动切换2
- #91
-  - DOMAIN-SUFFIX,91porn.com,九一
-  - DOMAIN-SUFFIX,killcovid2021.com,九一
-  - DOMAIN-SUFFIX,91pornplus.com,九一
-  - DOMAIN-SUFFIX,91p49.com,九一
-  - DOMAIN-SUFFIX,91p263.com,九一
-  - DOMAIN-SUFFIX,cdn77.org,九一
-  - DOMAIN-SUFFIX,btc35000.com,九一
-  - DOMAIN-SUFFIX,9p9.xyz,九一
 #哔嘀影视
   - DOMAIN-SUFFIX,bdys03.com,🎯 全球直连
   - DOMAIN-SUFFIX,bdys01.com,🎯 全球直连
