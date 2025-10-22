@@ -1,59 +1,10 @@
-# =========================================
-# Clash Rule Base Template
-# 可作为 SubConverter 的 clash_rule_base
-# =========================================
-
-# Clash 全局设置
+allow-lan: true
 port: 7890
 socks-port: 7891
-allow-lan: true
+mixed-port: 9981
 mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
-# ========== DNS 模块开始 ==========
-dns:
-  enable: true                # 总开关
-  listen: 0.0.0.0:1053       # 本地 DNS 服务器，按需改端口或注释
-  enhanced-mode: fake-ip     # 核心：fake-ip 模式
-  fake-ip-range: 198.18.0.1/16   # 私有段，勿动
-  use-hosts: true            # 让系统 hosts 生效
-
-  # 1. 先走国内 DoH，快速、省流量
-  default-nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
-
-  # 2. 常规解析：国内外域名分流
-  nameserver:
-    - https://dns.alidns.com/dns-query  # 国内
-    - https://doh.pub/dns-query         # 国内
-    - https://dns.google/dns-query      # 国外
-    - https://cloudflare-dns.com/dns-query
-
-  # 3. 兜底：仅当 nameserver 返回空或国外 IP 时触发
-  fallback:
-    - tls://8.8.8.8
-    - tls://1.1.1.1
-  fallback-filter:
-    geoip: true          # 只接受国外 IP
-    geoip-code: CN       # 与上一条配套：CN 结果视为无效
-    ipcidr:              # 额外丢弃段
-      - 240.0.0.0/4
-      - 0.0.0.0/32
-
-  # 4. 关键：让大陆域名绕过 fake-ip，直接拿真实国内 IP
-  fake-ip-filter:
-    - "geosite:cn"        # 大陆域名白名单
-    - "geosite:private"   # 局域网
-    - "*.lan"
-    - "+.local"
-    - "*.tp-link.com.cn"  # 常见路由器域名，按需再补
-
-  # 5. 缓存与并发调优
-  cache-size: 4096
-  dns-timeout: 5
-  # ========== DNS 模块结束 ==========
-
 # 默认规则（示例）
 rules:
 #91
