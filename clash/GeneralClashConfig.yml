@@ -14,6 +14,8 @@ dns:
   use-hosts: true
 # 默认规则（示例）
 rules:
+#测速
+  - DOMAIN-SUFFIX,test.ustc.edu.cn,🎯 全球直连
 #91
   - DOMAIN-SUFFIX,91selfie.com,九一
   - DOMAIN-KEYWORD,91porn,九一
