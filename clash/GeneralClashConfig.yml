@@ -46,9 +46,10 @@ rules:
 #谷歌商店更新
   - DOMAIN-SUFFIX,play.googleapis.com,🚀 节点选择
   - DOMAIN-SUFFIX,android.clients.google.com,🚀 节点选择
-  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🎯 全球直连
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🚀 手动切换
+  - DOMAIN-SUFFIX,services.googleapis.cn,🚀 手动切换
   - DOMAIN-SUFFIX,connectivitycheck.gstatic.com,🎯 全球直连
-  - DOMAIN-SUFFIX,services.googleapis.cn,🎯 全球直连
+#微信
   - DOMAIN-SUFFIX,weixinbridge.com,🎯 全球直连
   - DOMAIN-KEYWORD,weixinbridge,🎯 全球直连
 #维基百科
