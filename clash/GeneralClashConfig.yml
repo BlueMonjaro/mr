@@ -14,8 +14,94 @@ dns:
   use-hosts: true
 # 默认规则（示例）
 rules:
-#测速
-  - DOMAIN-SUFFIX,test.ustc.edu.cn,🎯 全球直连
+ # 🇨🇳 中国测速网站直连
+  - DOMAIN-SUFFIX,speedtest.cn,DIRECT
+  - DOMAIN-SUFFIX,speedtest.net,DIRECT
+  - DOMAIN-SUFFIX,ooklaserver.net,DIRECT
+  - DOMAIN-SUFFIX,cewang.com,DIRECT
+  - DOMAIN-SUFFIX,cewang.net,DIRECT
+  - DOMAIN-SUFFIX,chinaz.com,DIRECT
+  - DOMAIN-SUFFIX,aizhan.com,DIRECT
+  - DOMAIN-SUFFIX,189.cn,DIRECT
+  - DOMAIN-SUFFIX,10010.com,DIRECT
+  - DOMAIN-SUFFIX,10086.cn,DIRECT
+  - DOMAIN-SUFFIX,test.ustc.edu.cn,DIRECT
+  # 🇨🇳 中国大陆常用 App 直连规则
+  # 抖音 / 直播核心
+  - DOMAIN-SUFFIX,douyin.com,DIRECT
+  - DOMAIN-SUFFIX,webcast.douyin.com,DIRECT
+  - DOMAIN-SUFFIX,amemv.com,DIRECT
+  - DOMAIN-SUFFIX,webcast.amemv.com,DIRECT
+  - DOMAIN-SUFFIX,snssdk.com,DIRECT
+  - DOMAIN-SUFFIX,aweme.snssdk.com,DIRECT 
+  - DOMAIN-SUFFIX,douyincdn.com,DIRECT
+  - DOMAIN-SUFFIX,byteimg.com,DIRECT
+  - DOMAIN-SUFFIX,bytecdn.cn,DIRECT
+  - DOMAIN-SUFFIX,pstatp.com,DIRECT  
+  # 字节通用
+  - DOMAIN-SUFFIX,bytedance.com,DIRECT
+  - DOMAIN-SUFFIX,zijieapi.com,DIRECT
+  - DOMAIN-SUFFIX,ixigua.com,DIRECT
+  
+  # 🟢 电商 / 本地生活（重点：京东）
+  - DOMAIN-SUFFIX,jd.com,DIRECT
+  - DOMAIN-SUFFIX,jd.hk,DIRECT
+  - DOMAIN-SUFFIX,360buy.com,DIRECT
+  - DOMAIN-SUFFIX,360buyimg.com,DIRECT
+  - DOMAIN-SUFFIX,jdcloud.com,DIRECT
+  - DOMAIN-SUFFIX,jdcloud-api.com,DIRECT
+  - DOMAIN-SUFFIX,jdcdn.com,DIRECT
+  - DOMAIN-SUFFIX,taobao.com,DIRECT
+  - DOMAIN-SUFFIX,tmall.com,DIRECT
+  - DOMAIN-SUFFIX,1688.com,DIRECT
+  - DOMAIN-SUFFIX,alicdn.com,DIRECT
+  - DOMAIN-SUFFIX,aliapp.org,DIRECT
+  - DOMAIN-SUFFIX,meituan.com,DIRECT
+  - DOMAIN-SUFFIX,meituan.net,DIRECT
+  - DOMAIN-SUFFIX,dianping.com,DIRECT
+  - DOMAIN-SUFFIX,ele.me,DIRECT
+  
+  # 🟡 社交 / 内容平台（不含抖音）
+  - DOMAIN-SUFFIX,weixin.qq.com,DIRECT
+  - DOMAIN-SUFFIX,qq.com,DIRECT
+  - DOMAIN-SUFFIX,wx.qlogo.cn,DIRECT
+  - DOMAIN-SUFFIX,mmbiz.qpic.cn,DIRECT
+  - DOMAIN-SUFFIX,qpic.cn,DIRECT
+  - DOMAIN-SUFFIX,weibo.com,DIRECT
+  - DOMAIN-SUFFIX,sina.com.cn,DIRECT
+  - DOMAIN-SUFFIX,sinaimg.cn,DIRECT
+  - DOMAIN-SUFFIX,weibocdn.com,DIRECT
+  - DOMAIN-SUFFIX,bilibili.com,DIRECT
+  - DOMAIN-SUFFIX,hdslb.com,DIRECT
+  
+  # 🟠 支付 / 金融（强烈建议直连）
+  - DOMAIN-SUFFIX,alipay.com,DIRECT
+  - DOMAIN-SUFFIX,alipayobjects.com,DIRECT
+  - DOMAIN-SUFFIX,alibaba.com,DIRECT
+  - DOMAIN-SUFFIX,antgroup.com,DIRECT
+  - DOMAIN-SUFFIX,unionpay.com,DIRECT
+  - DOMAIN-SUFFIX,95516.com,DIRECT
+  
+  # 🔵 地图 / 出行 / 生活服务
+  - DOMAIN-SUFFIX,amap.com,DIRECT
+  - DOMAIN-SUFFIX,gaode.com,DIRECT
+  - DOMAIN-SUFFIX,autonavi.com,DIRECT
+  - DOMAIN-SUFFIX,ctrip.com,DIRECT
+  - DOMAIN-SUFFIX,trip.com,DIRECT
+  - DOMAIN-SUFFIX,qunar.com,DIRECT
+  - DOMAIN-SUFFIX,12306.cn,DIRECT
+  
+# 🟤 邮箱 / 常用工具
+  - DOMAIN-SUFFIX,163.com,DIRECT
+  - DOMAIN-SUFFIX,126.net,DIRECT
+  - DOMAIN-SUFFIX,yeah.net,DIRECT
+  - DOMAIN-SUFFIX,mail.qq.com,DIRECT
+  - DOMAIN-SUFFIX,foxmail.com,DIRECT
+  - DOMAIN-SUFFIX,uc.cn,DIRECT
+  - DOMAIN-SUFFIX,ucweb.com,DIRECT
+  - DOMAIN-SUFFIX,mi.com,DIRECT
+  - DOMAIN-SUFFIX,xiaomi.net,DIRECT
+  
 #91
   - DOMAIN-SUFFIX,91selfie.com,九一
   - DOMAIN-KEYWORD,91porn,九一
