@@ -14,6 +14,9 @@ dns:
   use-hosts: true
 # 默认规则（示例）
 rules:
+ # 谷歌翻译
+  - DOMAIN-SUFFIX,translate.googleapis.com,🚀 节点选择
+  - DOMAIN-SUFFIX,clients5.google.com,🚀 节点选择
  # 🇨🇳 中国测速网站直连
   - DOMAIN-SUFFIX,speedtest.cn,DIRECT
   - DOMAIN-SUFFIX,speedtest.net,DIRECT
