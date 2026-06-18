@@ -1,0 +1,87 @@
+# Google AI Search / AI Mode / Google Search
+
+# 核心搜索与 AI Mode
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,labs.google
+DOMAIN-SUFFIX,search.google
+DOMAIN-SUFFIX,ai.google
+
+# Google 登录 / 账号
+DOMAIN,accounts.google.com
+DOMAIN,ogs.google.com
+DOMAIN,myaccount.google.com
+DOMAIN,myactivity.google.com
+
+# Google 静态资源 / API / 图片
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,googleusercontent.com
+
+# Google App / Chrome / iOS 常见依赖
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN-SUFFIX,gvt2.com
+DOMAIN-SUFFIX,app-measurement.com
+DOMAIN,clientservices.googleapis.com
+DOMAIN,update.googleapis.com
+DOMAIN,safebrowsing.googleapis.com
+DOMAIN,firebaseinstallations.googleapis.com
+DOMAIN,firebaselogging-pa.googleapis.com
+
+# Google 图片缩略图
+DOMAIN,encrypted-tbn0.gstatic.com
+DOMAIN,encrypted-tbn1.gstatic.com
+DOMAIN,encrypted-tbn2.gstatic.com
+DOMAIN,encrypted-tbn3.gstatic.com
+DOMAIN,lh3.googleusercontent.com
+DOMAIN,lh4.googleusercontent.com
+DOMAIN,lh5.googleusercontent.com
+DOMAIN,lh6.googleusercontent.com
+
+# 验证码 / 风控
+DOMAIN-SUFFIX,recaptcha.net
+
+# 防止跳转到非美国 Google 地区站
+DOMAIN-SUFFIX,google.com.hk
+DOMAIN-SUFFIX,google.com.tw
+DOMAIN-SUFFIX,google.co.jp
+DOMAIN-SUFFIX,google.co.kr
+DOMAIN-SUFFIX,google.com.sg
+DOMAIN-SUFFIX,google.com.my
+DOMAIN-SUFFIX,google.co.th
+DOMAIN-SUFFIX,google.co.in
+DOMAIN-SUFFIX,google.com.au
+DOMAIN-SUFFIX,google.ca
+DOMAIN-SUFFIX,google.co.uk
+DOMAIN-SUFFIX,google.de
+DOMAIN-SUFFIX,google.fr
+DOMAIN-SUFFIX,google.it
+DOMAIN-SUFFIX,google.es
+DOMAIN-SUFFIX,google.nl
+DOMAIN-SUFFIX,google.com.br
+DOMAIN-SUFFIX,google.ae
+DOMAIN-SUFFIX,google.at
+DOMAIN-SUFFIX,google.be
+DOMAIN-SUFFIX,google.ch
+DOMAIN-SUFFIX,google.cl
+DOMAIN-SUFFIX,google.co.id
+DOMAIN-SUFFIX,google.co.il
+DOMAIN-SUFFIX,google.co.nz
+DOMAIN-SUFFIX,google.co.za
+DOMAIN-SUFFIX,google.com.ar
+DOMAIN-SUFFIX,google.com.mx
+DOMAIN-SUFFIX,google.com.tr
+DOMAIN-SUFFIX,google.com.vn
+DOMAIN-SUFFIX,google.dk
+DOMAIN-SUFFIX,google.fi
+DOMAIN-SUFFIX,google.ie
+DOMAIN-SUFFIX,google.no
+DOMAIN-SUFFIX,google.pl
+DOMAIN-SUFFIX,google.pt
+DOMAIN-SUFFIX,google.se
+
+# 可选：广告 / 统计 / 搜索广告相关
+DOMAIN-SUFFIX,googleadservices.com
+DOMAIN-SUFFIX,googlesyndication.com
+DOMAIN-SUFFIX,doubleclick.net
+DOMAIN-SUFFIX,googletagmanager.com
+DOMAIN-SUFFIX,google-analytics.com
