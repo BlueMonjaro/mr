@@ -1,297 +1,297 @@
 ipv6: false
 dns:
   nameserver:
-  - 223.5.5.5
-  - 119.29.29.29
+    - 223.5.5.5
+    - 119.29.29.29
   fallback:
-  - https://1.1.1.1/dns-query
-  - https://8.8.8.8/dns-query
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
 proxy-groups:
-- name: ♻️ 自动选择
-  type: url-test
-  include-all: true
-  url: http://www.gstatic.com/generate_204
-  interval: 120
-  tolerance: 50
-  lazy: false
-- name: 🚀 节点选择
-  type: select
-  proxies:
-  - ♻️ 自动选择
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇺🇲 美国节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  - DIRECT
-- name: 🚀 手动切换
-  type: select
-  include-all: true
-- name: 🤖 OpenAI
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - 🇺🇲 美国节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🚀 手动切换
-  - DIRECT
-  - 🇭🇰 香港节点
-  include-all: true
-- name: 💬 Ai平台
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - ♻️ 自动选择
-  - 🇸🇬 狮城节点
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇯🇵 日本节点
-  - 🇺🇲 美国节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  - DIRECT
-  include-all: true
-- name: 🔎 Google
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - 🇺🇲 美国节点
-  - 🇸🇬 狮城节点
-  - 🇭🇰 香港节点
-  - 🇯🇵 日本节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  include-all: true
-- name: 📢 谷歌FCM
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - 🇺🇲 美国节点
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  - DIRECT
-- name: 🔎 GoogleEarth
-  type: select
-  proxies:
-  - ♻️ 自动选择
-  - 🇺🇲 美国节点
-  - 🇭🇰 香港节点
-  - 🚀 节点选择
-  - DIRECT
-  include-all: true
-- name: 🕊️ X / Twitter
-  type: select
-  proxies:
-  - ♻️ 自动选择
-  - 🇺🇲 美国节点
-  - 🇭🇰 香港节点
-  - 🚀 节点选择
-  - DIRECT
-  include-all: true
-- name: 🌍 国外媒体
-  type: select
-  proxies:
-  - ♻️ 自动选择
-  - 🚀 节点选择
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇺🇲 美国节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  - DIRECT
-  include-all: true
-- name: 📹 油管视频
-  type: select
-  proxies:
-  - ♻️ 自动选择
-  - 🚀 节点选择
-  - 🇸🇬 狮城节点
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇯🇵 日本节点
-  - 🇺🇲 美国节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  - DIRECT
-  include-all: true
-- name: 📲 电报消息
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - ♻️ 自动选择
-  - 🇸🇬 狮城节点
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇯🇵 日本节点
-  - 🇺🇲 美国节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  - DIRECT
-  include-all: true
-- name: 🧩 Github
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - ♻️ 自动选择
-  - 🇸🇬 狮城节点
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇯🇵 日本节点
-  - 🇺🇲 美国节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  - DIRECT
-  include-all: true
-- name: 🧩 Speedtest
-  type: select
-  proxies:
-  - DIRECT
-  include-all: true
-- name: 🌏 国内媒体
-  type: select
-  proxies:
-  - DIRECT
-  - 🚀 手动切换
-- name: Ⓜ️ 微软Bing
-  type: select
-  proxies:
-  - DIRECT
-  - 🚀 手动切换
-- name: Ⓜ️ 微软云盘
-  type: select
-  proxies:
-  - DIRECT
-  - 🚀 手动切换
-- name: Ⓜ️ 微软服务
-  type: select
-  proxies:
-  - DIRECT
-  - 🚀 手动切换
-- name: 🎥 奈飞视频
-  type: select
-  include-all: true
-- name: 🍎 苹果服务
-  type: select
-  proxies:
-  - DIRECT
-  - 🚀 节点选择
-  - ♻️ 自动选择
-  - 🇺🇲 美国节点
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-- name: 🎮 游戏平台
-  type: select
-  proxies:
-  - DIRECT
-  - 🚀 节点选择
-  - 🇺🇲 美国节点
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  include-all: true
-- name: 🎶 网易音乐
-  type: select
-  proxies:
-  - DIRECT
-  - 🚀 节点选择
-  - ♻️ 自动选择
-  include-all: true
-- name: 📺 哔哩哔哩
-  type: select
-  proxies:
-  - 🎯 全球直连
-  - 🇨🇳 台湾节点
-  - 🇭🇰 香港节点
-- name: 🧩 Wechat
-  type: select
-  proxies:
-  - DIRECT
-  - 🚀 节点选择
-- name: 🧩 DouYin
-  type: select
-  proxies:
-  - DIRECT
-  - 🚀 节点选择
-- name: 🎯 全球直连
-  type: select
-  proxies:
-  - DIRECT
-  - 🚀 节点选择
-  - ♻️ 自动选择
-- name: 🇭🇰 香港节点
-  type: url-test
-  include-all: true
-  filter: (港|香港|HK|hk|HKG|Hong Kong|HongKong|hongkong|九龙|九龍|荃湾|荃灣|将军澳|將軍澳|HKT|HKBN|PCCW)
-  url: http://www.gstatic.com/generate_204
-  interval: 120
-  tolerance: 50
-  lazy: false
-- name: 🇯🇵 日本节点
-  type: url-test
-  include-all: true
-  filter: (日本|川日|东京|東京|大阪|泉日|埼玉|沪日|深日|横滨|横浜|名古屋|福冈|福岡|JP|JPN|Japan|Tokyo|Osaka|Yokohama|Nagoya|Fukuoka)
-  url: http://www.gstatic.com/generate_204
-  interval: 120
-  tolerance: 50
-  lazy: false
-- name: 🇺🇲 美国节点
-  type: url-test
-  include-all: true
-  filter: (美|美国|美國|波特兰|波特蘭|达拉斯|達拉斯|俄勒冈|俄勒岡|凤凰城|鳳凰城|费利蒙|費利蒙|硅谷|矽谷|拉斯维加斯|拉斯維加斯|洛杉矶|洛杉磯|圣何塞|聖何塞|圣克拉拉|聖克拉拉|西雅图|西雅圖|芝加哥|纽约|紐約|旧金山|舊金山|迈阿密|邁阿密|休斯顿|休斯頓|亚特兰大|亞特蘭大|US|USA|United States|Los Angeles|Seattle|Silicon Valley|San Jose|Santa Clara|San Francisco|Chicago|New York|Dallas|Portland|Phoenix|Fremont|Oregon|Las Vegas|Miami|Houston|Atlanta)
-  url: http://www.gstatic.com/generate_204
-  interval: 120
-  tolerance: 80
-  lazy: false
-- name: 🇨🇳 台湾节点
-  type: url-test
-  include-all: true
-  filter: (台|台湾|台灣|新北|彰化|台北|臺北|台中|臺中|高雄|TW|TWN|Taiwan|Taipei|New Taipei|Taichung|Kaohsiung|Changhua)
-  url: http://www.gstatic.com/generate_204
-  interval: 120
-  tolerance: 50
-  lazy: false
-- name: 🇸🇬 狮城节点
-  type: url-test
-  include-all: true
-  filter: (新加坡|坡|狮城|獅城|SG|SGP|Singapore)
-  url: http://www.gstatic.com/generate_204
-  interval: 120
-  tolerance: 50
-  lazy: false
-- name: 🇰🇷 韩国节点
-  type: url-test
-  include-all: true
-  filter: (KR|KOR|Korea|South Korea|首尔|首爾|釜山|韩|韓|韩国|韓國|Seoul|Busan)
-  url: http://www.gstatic.com/generate_204
-  interval: 120
-  tolerance: 50
-  lazy: false
-- name: 🎥 奈飞节点
-  type: select
-  include-all: true
-- name: 🐟 漏网之鱼
-  type: select
-  proxies:
-  - DIRECT
-  - ♻️ 自动选择
-  - 🚀 节点选择
-  - 🚀 手动切换
+  - name: ♻️ 自动选择
+    type: url-test
+    include-all: true
+    url: http://www.gstatic.com/generate_204
+    interval: 120
+    tolerance: 50
+    lazy: false
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🚀 手动切换
+    type: select
+    include-all: true
+  - name: 🤖 OpenAI
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🚀 手动切换
+      - DIRECT
+      - 🇭🇰 香港节点
+    include-all: true
+  - name: 💬 Ai平台
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+    include-all: true
+  - name: 🔎 Google
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+    include-all: true
+  - name: 📢 谷歌FCM
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🔎 GoogleEarth
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🚀 节点选择
+      - DIRECT
+    include-all: true
+  - name: 🕊️ X / Twitter
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🚀 节点选择
+      - DIRECT
+    include-all: true
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - 🚀 节点选择
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+    include-all: true
+  - name: 📹 油管视频
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - 🚀 节点选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+    include-all: true
+  - name: 📲 电报消息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+    include-all: true
+  - name: 🧩 Github
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+    include-all: true
+  - name: 🧩 Speedtest
+    type: select
+    proxies:
+      - DIRECT
+    include-all: true
+  - name: 🌏 国内媒体
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 手动切换
+  - name: Ⓜ️ 微软Bing
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 手动切换
+  - name: Ⓜ️ 微软云盘
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 手动切换
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 手动切换
+  - name: 🎥 奈飞视频
+    type: select
+    include-all: true
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🎮 游戏平台
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+    include-all: true
+  - name: 🎶 网易音乐
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+    include-all: true
+  - name: 📺 哔哩哔哩
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🇨🇳 台湾节点
+      - 🇭🇰 香港节点
+  - name: 🧩 Wechat
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+  - name: 🧩 DouYin
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🇭🇰 香港节点
+    type: url-test
+    include-all: true
+    filter: (港|香港|HK|hk|HKG|Hong Kong|HongKong|hongkong|九龙|九龍|荃湾|荃灣|将军澳|將軍澳|HKT|HKBN|PCCW)
+    url: http://www.gstatic.com/generate_204
+    interval: 120
+    tolerance: 50
+    lazy: false
+  - name: 🇯🇵 日本节点
+    type: url-test
+    include-all: true
+    filter: (日本|川日|东京|東京|大阪|泉日|埼玉|沪日|深日|横滨|横浜|名古屋|福冈|福岡|JP|JPN|Japan|Tokyo|Osaka|Yokohama|Nagoya|Fukuoka)
+    url: http://www.gstatic.com/generate_204
+    interval: 120
+    tolerance: 50
+    lazy: false
+  - name: 🇺🇲 美国节点
+    type: url-test
+    include-all: true
+    filter: (美|美国|美國|波特兰|波特蘭|达拉斯|達拉斯|俄勒冈|俄勒岡|凤凰城|鳳凰城|费利蒙|費利蒙|硅谷|矽谷|拉斯维加斯|拉斯維加斯|洛杉矶|洛杉磯|圣何塞|聖何塞|圣克拉拉|聖克拉拉|西雅图|西雅圖|芝加哥|纽约|紐約|旧金山|舊金山|迈阿密|邁阿密|休斯顿|休斯頓|亚特兰大|亞特蘭大|US|USA|United States|Los Angeles|Seattle|Silicon Valley|San Jose|Santa Clara|San Francisco|Chicago|New York|Dallas|Portland|Phoenix|Fremont|Oregon|Las Vegas|Miami|Houston|Atlanta)
+    url: http://www.gstatic.com/generate_204
+    interval: 120
+    tolerance: 80
+    lazy: false
+  - name: 🇨🇳 台湾节点
+    type: url-test
+    include-all: true
+    filter: (台|台湾|台灣|新北|彰化|台北|臺北|台中|臺中|高雄|TW|TWN|Taiwan|Taipei|New Taipei|Taichung|Kaohsiung|Changhua)
+    url: http://www.gstatic.com/generate_204
+    interval: 120
+    tolerance: 50
+    lazy: false
+  - name: 🇸🇬 狮城节点
+    type: url-test
+    include-all: true
+    filter: (新加坡|坡|狮城|獅城|SG|SGP|Singapore)
+    url: http://www.gstatic.com/generate_204
+    interval: 120
+    tolerance: 50
+    lazy: false
+  - name: 🇰🇷 韩国节点
+    type: url-test
+    include-all: true
+    filter: (KR|KOR|Korea|South Korea|首尔|首爾|釜山|韩|韓|韩国|韓國|Seoul|Busan)
+    url: http://www.gstatic.com/generate_204
+    interval: 120
+    tolerance: 50
+    lazy: false
+  - name: 🎥 奈飞节点
+    type: select
+    include-all: true
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - DIRECT
+      - ♻️ 自动选择
+      - 🚀 节点选择
+      - 🚀 手动切换
 rule-providers:
   Direct_LAN:
     type: http
@@ -474,41 +474,41 @@ rule-providers:
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/a32b0cb86b8f14deb0599e99c2b29383b0a4ca6a/Clash/Download.list
     interval: 86400
 rules:
-- RULE-SET,Direct_LAN,🎯 全球直连
-- RULE-SET,Direct_UnBan,🎯 全球直连
-- RULE-SET,Wechat,🧩 Wechat
-- RULE-SET,DouYin,🧩 DouYin
-- RULE-SET,Github,🧩 Github
-- RULE-SET,Speedtest,🧩 Speedtest
-- RULE-SET,Netflix,🎥 奈飞视频
-- RULE-SET,OpenAI,🤖 OpenAI
-- RULE-SET,GoogleFCM,📢 谷歌FCM
-- RULE-SET,Google,🔎 Google
-- RULE-SET,GoogleEarth,🔎 GoogleEarth
-- RULE-SET,AI,💬 Ai平台
-- RULE-SET,AI_OpenAI,💬 Ai平台
-- RULE-SET,Twitter,🕊️ X / Twitter
-- RULE-SET,Telegram,📲 电报消息
-- RULE-SET,YouTube,📹 油管视频
-- RULE-SET,BilibiliHMT,📺 哔哩哔哩
-- RULE-SET,Bilibili,📺 哔哩哔哩
-- RULE-SET,ProxyMedia,🌍 国外媒体
-- RULE-SET,ChinaMedia,🌏 国内媒体
-- RULE-SET,Bing,Ⓜ️ 微软Bing
-- RULE-SET,OneDrive,Ⓜ️ 微软云盘
-- RULE-SET,Microsoft,Ⓜ️ 微软服务
-- RULE-SET,Apple,🍎 苹果服务
-- RULE-SET,Epic,🎮 游戏平台
-- RULE-SET,Origin,🎮 游戏平台
-- RULE-SET,Sony,🎮 游戏平台
-- RULE-SET,Steam,🎮 游戏平台
-- RULE-SET,Nintendo,🎮 游戏平台
-- RULE-SET,NetEaseMusic,🎶 网易音乐
-- RULE-SET,ProxyGFW,🚀 节点选择
-- RULE-SET,GoogleCN,🎯 全球直连
-- RULE-SET,SteamCN,🎯 全球直连
-- RULE-SET,ChinaDomain,🎯 全球直连
-- RULE-SET,ChinaCompanyIp,🎯 全球直连
-- RULE-SET,Download,🎯 全球直连
-- GEOIP,CN,🎯 全球直连
-- MATCH,🐟 漏网之鱼
+  - RULE-SET,Direct_LAN,🎯 全球直连
+  - RULE-SET,Direct_UnBan,🎯 全球直连
+  - RULE-SET,Wechat,🧩 Wechat
+  - RULE-SET,DouYin,🧩 DouYin
+  - RULE-SET,Github,🧩 Github
+  - RULE-SET,Speedtest,🧩 Speedtest
+  - RULE-SET,Netflix,🎥 奈飞视频
+  - RULE-SET,OpenAI,🤖 OpenAI
+  - RULE-SET,GoogleFCM,📢 谷歌FCM
+  - RULE-SET,Google,🔎 Google
+  - RULE-SET,GoogleEarth,🔎 GoogleEarth
+  - RULE-SET,AI,💬 Ai平台
+  - RULE-SET,AI_OpenAI,💬 Ai平台
+  - RULE-SET,Twitter,🕊️ X / Twitter
+  - RULE-SET,Telegram,📲 电报消息
+  - RULE-SET,YouTube,📹 油管视频
+  - RULE-SET,BilibiliHMT,📺 哔哩哔哩
+  - RULE-SET,Bilibili,📺 哔哩哔哩
+  - RULE-SET,ProxyMedia,🌍 国外媒体
+  - RULE-SET,ChinaMedia,🌏 国内媒体
+  - RULE-SET,Bing,Ⓜ️ 微软Bing
+  - RULE-SET,OneDrive,Ⓜ️ 微软云盘
+  - RULE-SET,Microsoft,Ⓜ️ 微软服务
+  - RULE-SET,Apple,🍎 苹果服务
+  - RULE-SET,Epic,🎮 游戏平台
+  - RULE-SET,Origin,🎮 游戏平台
+  - RULE-SET,Sony,🎮 游戏平台
+  - RULE-SET,Steam,🎮 游戏平台
+  - RULE-SET,Nintendo,🎮 游戏平台
+  - RULE-SET,NetEaseMusic,🎶 网易音乐
+  - RULE-SET,ProxyGFW,🚀 节点选择
+  - RULE-SET,GoogleCN,🎯 全球直连
+  - RULE-SET,SteamCN,🎯 全球直连
+  - RULE-SET,ChinaDomain,🎯 全球直连
+  - RULE-SET,ChinaCompanyIp,🎯 全球直连
+  - RULE-SET,Download,🎯 全球直连
+  - GEOIP,CN,🎯 全球直连
+  - MATCH,🐟 漏网之鱼
