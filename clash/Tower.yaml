@@ -343,6 +343,13 @@ proxy-groups:
   - 🚀 手动切换
 
 rule-providers:
+  R00_OpenAI_自定义:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/BlueMonjaro/mr/main/rules/OpenAI.list
+    path: ./ruleset/R00_OpenAI_自定义.yaml
+    interval: 86400
+
   R01_全球直连:
     type: http
     behavior: classical
@@ -596,6 +603,7 @@ rule-providers:
     interval: 86400
 
 rules:
+- RULE-SET,R00_OpenAI_自定义,🤖 OpenAI
 - RULE-SET,R01_全球直连,🎯 全球直连
 - RULE-SET,R02_全球直连,🎯 全球直连
 - RULE-SET,R03_Wechat,🧩 Wechat
