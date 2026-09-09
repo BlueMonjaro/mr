@@ -346,6 +346,7 @@ rule-providers:
   R00_OpenAI_自定义:
     type: http
     behavior: classical
+    format: text
     url: https://raw.githubusercontent.com/BlueMonjaro/mr/main/rules/OpenAI.list
     path: ./ruleset/R00_OpenAI_自定义.yaml
     interval: 86400
