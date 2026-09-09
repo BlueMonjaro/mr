@@ -604,6 +604,8 @@ rule-providers:
     interval: 86400
 
 rules:
+- AND,((NETWORK,UDP),(DST-PORT,443),(DOMAIN-SUFFIX,openai.com)),REJECT
+- AND,((NETWORK,UDP),(DST-PORT,443),(DOMAIN-SUFFIX,chatgpt.com)),REJECT
 - RULE-SET,R01_OpenAI_自定义,🤖 OpenAI
 - RULE-SET,R02_全球直连,🎯 全球直连
 - RULE-SET,R03_全球直连,🎯 全球直连
