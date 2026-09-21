@@ -1,0 +1,147 @@
+# NAME: DouYin
+# UPDATED: 2026-09-22 00:15:00
+# DOMAIN: 2
+# DOMAIN-SUFFIX: 77
+# TOTAL: 79
+
+# =========================
+
+# 原 Blackmatrix7 DouYin
+
+# =========================
+
+DOMAIN,lf3-static.bytednsdoc.com
+DOMAIN,v5-dy-o-abtest.zjcdn.com
+DOMAIN-SUFFIX,amemv.com
+DOMAIN-SUFFIX,douyincdn.com
+DOMAIN-SUFFIX,douyinpic.com
+DOMAIN-SUFFIX,douyinstatic.com
+DOMAIN-SUFFIX,douyinvod.com
+DOMAIN-SUFFIX,idouyinvod.com
+DOMAIN-SUFFIX,ixigua.com
+DOMAIN-SUFFIX,ixiguavideo.com
+DOMAIN-SUFFIX,pstatp.com
+DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,toutiao.com
+
+# =========================
+
+# 抖音本体补充
+
+# =========================
+
+DOMAIN-SUFFIX,douyin.com
+DOMAIN-SUFFIX,douyinact.com
+DOMAIN-SUFFIX,douyinact.net
+DOMAIN-SUFFIX,douyinclips.com
+DOMAIN-SUFFIX,douyinec.com
+DOMAIN-SUFFIX,douyinliving.com
+DOMAIN-SUFFIX,douyinvideo.net
+DOMAIN-SUFFIX,idouyinpic.com
+DOMAIN-SUFFIX,idouyinstatic.com
+DOMAIN-SUFFIX,iesdouyin.com
+DOMAIN-SUFFIX,iesdouyin.net
+
+# =========================
+
+# 字节公共基础设施
+
+# =========================
+
+DOMAIN-SUFFIX,byteactivity.com
+DOMAIN-SUFFIX,bytecdn.cn
+DOMAIN-SUFFIX,bytecdn.com
+DOMAIN-SUFFIX,bytecdntp.com
+DOMAIN-SUFFIX,byteeffecttos.com
+DOMAIN-SUFFIX,bytegecko.com
+DOMAIN-SUFFIX,bytegeckoext.com
+DOMAIN-SUFFIX,bytegoofy.com
+DOMAIN-SUFFIX,bytegslb.com
+DOMAIN-SUFFIX,byteimg.com
+DOMAIN-SUFFIX,byteimgc.com
+DOMAIN-SUFFIX,bytemaimg.com
+DOMAIN-SUFFIX,bytescm.com
+DOMAIN-SUFFIX,bytetcc.com
+DOMAIN-SUFFIX,bytetos.com
+
+# =========================
+
+# 字节官方域名 / DNS
+
+# =========================
+
+DOMAIN-SUFFIX,bytedance.cn
+DOMAIN-SUFFIX,bytedance.com
+DOMAIN-SUFFIX,bytedance.net
+DOMAIN-SUFFIX,bytedanceapi.com
+DOMAIN-SUFFIX,bytedns.com
+DOMAIN-SUFFIX,bytedns.net
+DOMAIN-SUFFIX,bytedns1.com
+DOMAIN-SUFFIX,bytedns2.com
+DOMAIN-SUFFIX,bytednsdoc.com
+
+# =========================
+
+# 字节 CDN / 通用网络基础设施
+
+# =========================
+
+DOMAIN-SUFFIX,ttbyte.cn
+DOMAIN-SUFFIX,ttbyte.com
+DOMAIN-SUFFIX,ttbyte.net
+DOMAIN-SUFFIX,toscdn.com
+
+# =========================
+
+# Zijie API / CDN / 图片
+
+# =========================
+
+DOMAIN-SUFFIX,zijieapi.cn
+DOMAIN-SUFFIX,zijieapi.com
+DOMAIN-SUFFIX,zijieapi.net
+DOMAIN-SUFFIX,zijiecdn.cn
+DOMAIN-SUFFIX,zijiecdn.com
+DOMAIN-SUFFIX,zijiecdn.net
+DOMAIN-SUFFIX,zijieimg.cn
+DOMAIN-SUFFIX,zijieimg.com
+DOMAIN-SUFFIX,zijieimg.net
+DOMAIN-SUFFIX,zijieurl.cn
+DOMAIN-SUFFIX,zijieurl.com
+DOMAIN-SUFFIX,zijieurl.net
+
+# =========================
+
+# ZJ / 字节 CDN
+
+# =========================
+
+DOMAIN-SUFFIX,zjbyte.cn
+DOMAIN-SUFFIX,zjbyte.com
+DOMAIN-SUFFIX,zjbyte.net
+DOMAIN-SUFFIX,zjcdn.com
+DOMAIN-SUFFIX,zjgslb.com
+
+# =========================
+
+# 西瓜视频补充
+
+# =========================
+
+DOMAIN-SUFFIX,ixgvideo.com
+DOMAIN-SUFFIX,xiguaapp.cn
+DOMAIN-SUFFIX,xiguaapp.com
+DOMAIN-SUFFIX,xiguavideo.cn
+DOMAIN-SUFFIX,xiguavideo.net
+
+# =========================
+
+# 抖音电商
+
+# =========================
+
+DOMAIN-SUFFIX,ecombdapi.com
+DOMAIN-SUFFIX,ecombdimg.com
+DOMAIN-SUFFIX,ecombdstatic.com
+DOMAIN-SUFFIX,ecombdvod.com
+DOMAIN-SUFFIX,jinritemai.com
