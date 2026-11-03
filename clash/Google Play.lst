@@ -1,0 +1,35 @@
+# NAME: GooglePlay
+# UPDATED: 2026-11-03
+# DOMAIN: 12
+# DOMAIN-SUFFIX: 2
+# TOTAL: 14
+
+# =========================
+# Google Play 商店核心服务
+# =========================
+DOMAIN,play.google.com
+DOMAIN,play.googleapis.com
+DOMAIN,play-fe.googleapis.com
+DOMAIN,android.clients.google.com
+DOMAIN,android.apis.google.com
+
+# =========================
+# Google Play 下载地址获取
+# =========================
+DOMAIN,services.googleapis.cn
+DOMAIN,services.googleapis.com
+
+# =========================
+# Google Play 应用下载与更新
+# =========================
+DOMAIN,dl.google.com
+DOMAIN,dl-ssl.google.com
+DOMAIN,dl.l.google.com
+DOMAIN-SUFFIX,xn--ngstr-lra8j.com
+DOMAIN-SUFFIX,gvt1.com
+
+# =========================
+# Google Play 商店资源
+# =========================
+DOMAIN,play-lh.googleusercontent.com
+DOMAIN,play-apps-features.googleusercontent.com
