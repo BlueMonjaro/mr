@@ -69,6 +69,8 @@ DOMAIN,challenges.cloudflare.com
 # =========================
 # OpenAI 其他产品与资源
 # =========================
+# OpenAI iOS 补充域名
+DOMAIN,o33249.ingest.us.sentry.io
 DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,sora.com
 DOMAIN,openaicom.imgix.net
